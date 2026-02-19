@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="tracker.css">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <div>
+        <input id="name" placeholder="Expense Name">
+        <input id="amount" placeholder="Amount">
+        <select id="category">
+            <option value="">Select Category</option>
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Utilities">Utilities</option>
+        </select>
+        <button onclick="addExpense()">Add Expense</button>
+    </div>
+    <div>
+
+        <table>
+                <tr>
+                    <th>Expense Name</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Action</th>
+                </tr>
+            <tbody id="table-body">
+
+        <!-- <button onclick="editExpense()">Edit Expense</button>
+        <button onclick="deleteExpense()">Delete Expense</button> -->
+                <!--JS inject html here-->
+            </tbody>
+        </table>
+    </div>
+    <div id="total">
+        Total: $0
+    </div>
+
+    <script src="tracker.js"></script>
+</body>
+</html>
